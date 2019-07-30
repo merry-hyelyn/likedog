@@ -1,0 +1,95 @@
+<!--프린트 페이지-->
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>멋쟁이 댕댕이처럼</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/heroic-features.css' %}" rel="stylesheet">
+    <link href="{% static 'css/print.css' %}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Poor+Story" rel="stylesheet">  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Like DaengDaengE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'enroll' %}">등록</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">정보</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'print' %}">프린트</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <img class="card-img-top" src="{% static 'images_5fun.jpg'%}" alt="" width="1000" height="700">
+      <h1 class="display-3">전단지를 손쉽게 만드세요!</h1>
+      <p class="lead">전단지를 손쉽게 만들어 보세요. 댕댕이 얼른 집에 들어가~~</p>
+      <a href="{% url 'print_new' %}" ><button type="button" class="btn btn-secondary btn-lg btn-block">프린트하러 가기!</button></a>
+
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="{% static 'dangdang.jpg' %}" alt="">
+          <div class="card-body">
+            <h4 class="card-title">전단지 샘플</h4>
+            <p class="card-text">댕댕이 집에 빨리 들어가</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">멋쟁이 댕댕처럼 -By.멋댕이</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

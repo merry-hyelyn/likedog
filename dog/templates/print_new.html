@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>멋쟁이 댕댕이처럼</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/heroic-features.css' %}" rel="stylesheet">
+  <style>img { display: block; margin: 0px auto; }</style>
+  
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">멋쟁이 댕댕이처럼</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <!--form안에 적은 데이터를 전송할 곳 지정 (create)-->
+        <!--form 은 input의 데이터를 묶어주는 역할-->
+   
+            <!--title이라는 이름으로 전달할 공간-->
+           
+          <form action="myform.cgi">
+            <input type="file" name="fileupload" value="fileupload" id="fileupload">
+            <label for="fileupload"> Select a file to upload</label>
+      
+          </form>
+          <img class="center" src="{% static 'ddd.jpg' %}" alt="" style="width:500px;">
+          <br>
+            <div class="input-group mb-3">
+             <div class="input-group-prepend">
+               <span class="input-group-text" id="inputGroup-sizing-default">이름</span>
+             </div>
+            <input type="text" name="name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">나이</span>
+            </div>
+        <input type="text" name="age" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">성별</span>
+            </div>
+           <input type="text" name="sex" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">견종</span>
+            </div>
+           <input type="text" name="style" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+           </div>
+           
+           <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">연락처</span>
+            </div>
+           <input type="text" name="cell" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+           </div>
+        
+           <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">특징 (크롬을 사용하세요)</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+        
+          <br>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">하고싶은말 (크롬을 사용하세요)</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+<br>
+<button onclick="myFunction()" class="btn btn-primary btn-lg">Print</button>
+    
+    <script>
+    function myFunction() {
+      window.print();
+    }
+    </script>        
+    </header>
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">멋쟁이 댕댕처럼 -By.멋댕이</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
