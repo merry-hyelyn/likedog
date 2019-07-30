@@ -1,0 +1,1 @@
+web: gunicorn like_dog.wsgi --log-file -

@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '9d$t-jz8g39b_0+lnf4@+a2-ok(9k496qk$jp7uv2-2&kngg4&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [".goorm.io"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
